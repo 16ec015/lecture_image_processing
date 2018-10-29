@@ -2,7 +2,7 @@
 
 標準画像を「gravure_28_mika.jpg」を原画像とする．この画像は縦2611画像，横3917画素による正方形のディジタルカラー画像である．
 
-ORG=imread('C:\Users\16ec015\Desktop\gravure_28_mika.jpg'); % 原画像の入力  
+ORG=imread('gravure_28_mika.jpg'); % 原画像の入力  
 imagesc(ORG); axis image; % 画像の表示
 
 によって，原画像を読み込み，表示した結果を図１に示す．
