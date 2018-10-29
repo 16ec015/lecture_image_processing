@@ -1,15 +1,15 @@
 clear;
-ORG=imread('C:\Users\16ec015\Desktop\gravure_28_mika.jpg');
+ORG=imread('lumel.jpg');
 ORG = rgb2gray(ORG); colormap(gray);
 imagesc(ORG); axis image;
 pause;
 
-% ‚QŠK’²‰æ‘œ‚Ì¶¬
+% ï¼’éšŽèª¿ç”»åƒã®ç”Ÿæˆ
 IMG = ORG>128;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 pause;
 
-% ‚SŠK’²‰æ‘œ‚Ì¶¬
+% ï¼”éšŽèª¿ç”»åƒã®ç”Ÿæˆ
 IMG0 = ORG>64;
 IMG1 = ORG>128;
 IMG2 = ORG>192;
@@ -17,7 +17,7 @@ IMG = IMG0 + IMG1 + IMG2;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
 pause;
 
-% ‚WŠK’²‰æ‘œ‚Ì¶¬
+% ï¼˜éšŽèª¿ç”»åƒã®ç”Ÿæˆ
 IMG0 = ORG>32;
 IMG1 = ORG>64;
 IMG2 = ORG>96;
